@@ -1,0 +1,4 @@
+2026-10-26T13:28:01   ALERT  week 7: data drift in 57% of features -> triggering retraining
+2026-10-26T13:28:02   RETRAIN candidate v2 AUC=0.849 vs production 0.846 on hold-out -> PROMOTED
+2026-10-26T13:28:02   ALERT  week 9: AUC fell 0.262 below baseline -> triggering retraining
+2026-10-26T13:28:03   RETRAIN candidate v3 AUC=0.761 vs production 0.717 on hold-out -> PROMOTED

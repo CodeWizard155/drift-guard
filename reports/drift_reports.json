@@ -1,0 +1,446 @@
+[
+  {
+    "week": 1,
+    "feature_psi": {
+      "age": 0.0073,
+      "income": 0.0099,
+      "loan_amount": 0.0105,
+      "credit_score": 0.0088,
+      "debt_to_income": 0.0042,
+      "employment_years": 0.0122,
+      "num_credit_lines": 0.0039
+    },
+    "feature_ks_p": {
+      "age": 0.8964526316917043,
+      "income": 0.6749488710114183,
+      "loan_amount": 0.6367099556677323,
+      "credit_score": 0.08422730115348732,
+      "debt_to_income": 0.6622097842269199,
+      "employment_years": 0.17798359933060978,
+      "num_credit_lines": 0.9648142086771601
+    },
+    "feature_status": {
+      "age": "ok",
+      "income": "ok",
+      "loan_amount": "ok",
+      "credit_score": "ok",
+      "debt_to_income": "ok",
+      "employment_years": "ok",
+      "num_credit_lines": "ok"
+    },
+    "drift_share": 0.0,
+    "data_drift": false,
+    "auc": 0.863,
+    "baseline_auc": 0.8701,
+    "performance_drift": false,
+    "retrain_needed": false,
+    "reason": "no drift"
+  },
+  {
+    "week": 2,
+    "feature_psi": {
+      "age": 0.0084,
+      "income": 0.0078,
+      "loan_amount": 0.0047,
+      "credit_score": 0.0041,
+      "debt_to_income": 0.0042,
+      "employment_years": 0.0012,
+      "num_credit_lines": 0.0051
+    },
+    "feature_ks_p": {
+      "age": 0.7440970727260909,
+      "income": 0.5672195947538968,
+      "loan_amount": 0.28083401458004204,
+      "credit_score": 0.4257861212445322,
+      "debt_to_income": 0.6940018578678561,
+      "employment_years": 0.9051035771712543,
+      "num_credit_lines": 0.8531675881538794
+    },
+    "feature_status": {
+      "age": "ok",
+      "income": "ok",
+      "loan_amount": "ok",
+      "credit_score": "ok",
+      "debt_to_income": "ok",
+      "employment_years": "ok",
+      "num_credit_lines": "ok"
+    },
+    "drift_share": 0.0,
+    "data_drift": false,
+    "auc": 0.8733,
+    "baseline_auc": 0.8701,
+    "performance_drift": false,
+    "retrain_needed": false,
+    "reason": "no drift"
+  },
+  {
+    "week": 3,
+    "feature_psi": {
+      "age": 0.013,
+      "income": 0.019,
+      "loan_amount": 0.0062,
+      "credit_score": 0.0099,
+      "debt_to_income": 0.0051,
+      "employment_years": 0.0072,
+      "num_credit_lines": 0.0028
+    },
+    "feature_ks_p": {
+      "age": 0.3680768859183612,
+      "income": 0.03921874565769482,
+      "loan_amount": 0.3435633940532348,
+      "credit_score": 0.013918978225777562,
+      "debt_to_income": 0.37818808596466863,
+      "employment_years": 0.21972892822241313,
+      "num_credit_lines": 0.9996047926784372
+    },
+    "feature_status": {
+      "age": "ok",
+      "income": "ok",
+      "loan_amount": "ok",
+      "credit_score": "ok",
+      "debt_to_income": "ok",
+      "employment_years": "ok",
+      "num_credit_lines": "ok"
+    },
+    "drift_share": 0.0,
+    "data_drift": false,
+    "auc": 0.8443,
+    "baseline_auc": 0.8701,
+    "performance_drift": false,
+    "retrain_needed": false,
+    "reason": "no drift"
+  },
+  {
+    "week": 4,
+    "feature_psi": {
+      "age": 0.0083,
+      "income": 0.0043,
+      "loan_amount": 0.0054,
+      "credit_score": 0.0048,
+      "debt_to_income": 0.0071,
+      "employment_years": 0.0107,
+      "num_credit_lines": 0.0005
+    },
+    "feature_ks_p": {
+      "age": 0.6685817577027043,
+      "income": 0.9173602687075414,
+      "loan_amount": 0.19010756096261494,
+      "credit_score": 0.32015632228668023,
+      "debt_to_income": 0.4824356325540115,
+      "employment_years": 0.028982763756707487,
+      "num_credit_lines": 0.9999719806397281
+    },
+    "feature_status": {
+      "age": "ok",
+      "income": "ok",
+      "loan_amount": "ok",
+      "credit_score": "ok",
+      "debt_to_income": "ok",
+      "employment_years": "ok",
+      "num_credit_lines": "ok"
+    },
+    "drift_share": 0.0,
+    "data_drift": false,
+    "auc": 0.8615,
+    "baseline_auc": 0.8701,
+    "performance_drift": false,
+    "retrain_needed": false,
+    "reason": "no drift"
+  },
+  {
+    "week": 5,
+    "feature_psi": {
+      "age": 0.0022,
+      "income": 0.0342,
+      "loan_amount": 0.0366,
+      "credit_score": 0.0579,
+      "debt_to_income": 0.0716,
+      "employment_years": 0.0048,
+      "num_credit_lines": 0.0218
+    },
+    "feature_ks_p": {
+      "age": 0.9924979633498441,
+      "income": 3.7187392162028224e-08,
+      "loan_amount": 3.3970954401271965e-08,
+      "credit_score": 2.493715787961997e-16,
+      "debt_to_income": 8.88498639188143e-13,
+      "employment_years": 0.7684963906613702,
+      "num_credit_lines": 0.0003522536256911524
+    },
+    "feature_status": {
+      "age": "ok",
+      "income": "ok",
+      "loan_amount": "ok",
+      "credit_score": "ok",
+      "debt_to_income": "ok",
+      "employment_years": "ok",
+      "num_credit_lines": "ok"
+    },
+    "drift_share": 0.0,
+    "data_drift": false,
+    "auc": 0.8535,
+    "baseline_auc": 0.8701,
+    "performance_drift": false,
+    "retrain_needed": false,
+    "reason": "no drift"
+  },
+  {
+    "week": 6,
+    "feature_psi": {
+      "age": 0.0052,
+      "income": 0.1477,
+      "loan_amount": 0.1088,
+      "credit_score": 0.1747,
+      "debt_to_income": 0.2578,
+      "employment_years": 0.0039,
+      "num_credit_lines": 0.1321
+    },
+    "feature_ks_p": {
+      "age": 0.9572065647172883,
+      "income": 8.757798657875723e-36,
+      "loan_amount": 9.46007032146011e-29,
+      "credit_score": 3.431980761293042e-37,
+      "debt_to_income": 1.6747688074027065e-44,
+      "employment_years": 0.7684963906613702,
+      "num_credit_lines": 1.125345398489525e-28
+    },
+    "feature_status": {
+      "age": "ok",
+      "income": "warning",
+      "loan_amount": "warning",
+      "credit_score": "warning",
+      "debt_to_income": "critical",
+      "employment_years": "ok",
+      "num_credit_lines": "warning"
+    },
+    "drift_share": 0.14285714285714285,
+    "data_drift": false,
+    "auc": 0.8492,
+    "baseline_auc": 0.8701,
+    "performance_drift": false,
+    "retrain_needed": false,
+    "reason": "no drift"
+  },
+  {
+    "week": 7,
+    "feature_psi": {
+      "age": 0.0232,
+      "income": 0.3444,
+      "loan_amount": 0.2441,
+      "credit_score": 0.4068,
+      "debt_to_income": 0.4116,
+      "employment_years": 0.0126,
+      "num_credit_lines": 0.2838
+    },
+    "feature_ks_p": {
+      "age": 0.01425432930259758,
+      "income": 2.2630285742236003e-82,
+      "loan_amount": 9.227888834910905e-58,
+      "credit_score": 4.0313405079748205e-88,
+      "debt_to_income": 1.7553125581653124e-73,
+      "employment_years": 0.5486149452356952,
+      "num_credit_lines": 5.919782215975602e-57
+    },
+    "feature_status": {
+      "age": "ok",
+      "income": "critical",
+      "loan_amount": "warning",
+      "credit_score": "critical",
+      "debt_to_income": "critical",
+      "employment_years": "ok",
+      "num_credit_lines": "critical"
+    },
+    "drift_share": 0.5714285714285714,
+    "data_drift": true,
+    "auc": 0.8383,
+    "baseline_auc": 0.8701,
+    "performance_drift": false,
+    "retrain_needed": true,
+    "reason": "data drift in 57% of features"
+  },
+  {
+    "week": 8,
+    "feature_psi": {
+      "age": 0.0105,
+      "income": 0.0612,
+      "loan_amount": 0.0956,
+      "credit_score": 0.0878,
+      "debt_to_income": 0.0768,
+      "employment_years": 0.0078,
+      "num_credit_lines": 0.0566
+    },
+    "feature_ks_p": {
+      "age": 0.7783781762232893,
+      "income": 2.7254807974529002e-11,
+      "loan_amount": 6.508584741119517e-20,
+      "credit_score": 1.4194853968152655e-17,
+      "debt_to_income": 4.309157129106446e-19,
+      "employment_years": 0.29403656227940034,
+      "num_credit_lines": 6.4295057728764906e-12
+    },
+    "feature_status": {
+      "age": "ok",
+      "income": "ok",
+      "loan_amount": "ok",
+      "credit_score": "ok",
+      "debt_to_income": "ok",
+      "employment_years": "ok",
+      "num_credit_lines": "ok"
+    },
+    "drift_share": 0.0,
+    "data_drift": false,
+    "auc": 0.8442,
+    "baseline_auc": 0.8489,
+    "performance_drift": false,
+    "retrain_needed": false,
+    "reason": "no drift"
+  },
+  {
+    "week": 9,
+    "feature_psi": {
+      "age": 0.0108,
+      "income": 0.0893,
+      "loan_amount": 0.0809,
+      "credit_score": 0.0515,
+      "debt_to_income": 0.065,
+      "employment_years": 0.0042,
+      "num_credit_lines": 0.0392
+    },
+    "feature_ks_p": {
+      "age": 0.41098037912417046,
+      "income": 4.662031346789682e-15,
+      "loan_amount": 1.1421338923193986e-14,
+      "credit_score": 3.2900909958400654e-12,
+      "debt_to_income": 2.9649990268125614e-15,
+      "employment_years": 0.9142428657594625,
+      "num_credit_lines": 6.568615507752199e-09
+    },
+    "feature_status": {
+      "age": "ok",
+      "income": "ok",
+      "loan_amount": "ok",
+      "credit_score": "ok",
+      "debt_to_income": "ok",
+      "employment_years": "ok",
+      "num_credit_lines": "ok"
+    },
+    "drift_share": 0.0,
+    "data_drift": false,
+    "auc": 0.5872,
+    "baseline_auc": 0.8489,
+    "performance_drift": true,
+    "retrain_needed": true,
+    "reason": "AUC fell 0.262 below baseline"
+  },
+  {
+    "week": 10,
+    "feature_psi": {
+      "age": 0.0044,
+      "income": 0.013,
+      "loan_amount": 0.0088,
+      "credit_score": 0.0062,
+      "debt_to_income": 0.0095,
+      "employment_years": 0.0037,
+      "num_credit_lines": 0.0028
+    },
+    "feature_ks_p": {
+      "age": 0.961651511014821,
+      "income": 0.09097099107730819,
+      "loan_amount": 0.5216592059917454,
+      "credit_score": 0.8465105922404744,
+      "debt_to_income": 0.3981480677027311,
+      "employment_years": 0.9726001723511565,
+      "num_credit_lines": 0.961651511014821
+    },
+    "feature_status": {
+      "age": "ok",
+      "income": "ok",
+      "loan_amount": "ok",
+      "credit_score": "ok",
+      "debt_to_income": "ok",
+      "employment_years": "ok",
+      "num_credit_lines": "ok"
+    },
+    "drift_share": 0.0,
+    "data_drift": false,
+    "auc": 0.7881,
+    "baseline_auc": 0.7613,
+    "performance_drift": false,
+    "retrain_needed": false,
+    "reason": "no drift"
+  },
+  {
+    "week": 11,
+    "feature_psi": {
+      "age": 0.0068,
+      "income": 0.0032,
+      "loan_amount": 0.0033,
+      "credit_score": 0.002,
+      "debt_to_income": 0.006,
+      "employment_years": 0.0031,
+      "num_credit_lines": 0.0018
+    },
+    "feature_ks_p": {
+      "age": 0.18742492810372027,
+      "income": 0.8590157356615958,
+      "loan_amount": 0.9042593134515341,
+      "credit_score": 0.9878021298153059,
+      "debt_to_income": 0.2190117814420265,
+      "employment_years": 0.6886578851681273,
+      "num_credit_lines": 0.9847735602032421
+    },
+    "feature_status": {
+      "age": "ok",
+      "income": "ok",
+      "loan_amount": "ok",
+      "credit_score": "ok",
+      "debt_to_income": "ok",
+      "employment_years": "ok",
+      "num_credit_lines": "ok"
+    },
+    "drift_share": 0.0,
+    "data_drift": false,
+    "auc": 0.7832,
+    "baseline_auc": 0.7613,
+    "performance_drift": false,
+    "retrain_needed": false,
+    "reason": "no drift"
+  },
+  {
+    "week": 12,
+    "feature_psi": {
+      "age": 0.0073,
+      "income": 0.0091,
+      "loan_amount": 0.0054,
+      "credit_score": 0.0032,
+      "debt_to_income": 0.0081,
+      "employment_years": 0.0079,
+      "num_credit_lines": 0.0012
+    },
+    "feature_ks_p": {
+      "age": 0.3377318489630856,
+      "income": 0.4240524103571177,
+      "loan_amount": 0.492771342287548,
+      "credit_score": 0.6579173759077388,
+      "debt_to_income": 0.2544931479573184,
+      "employment_years": 0.09954816217573116,
+      "num_credit_lines": 0.9997243215062951
+    },
+    "feature_status": {
+      "age": "ok",
+      "income": "ok",
+      "loan_amount": "ok",
+      "credit_score": "ok",
+      "debt_to_income": "ok",
+      "employment_years": "ok",
+      "num_credit_lines": "ok"
+    },
+    "drift_share": 0.0,
+    "data_drift": false,
+    "auc": 0.7821,
+    "baseline_auc": 0.7613,
+    "performance_drift": false,
+    "retrain_needed": false,
+    "reason": "no drift"
+  }
+]

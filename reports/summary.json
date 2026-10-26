@@ -1,0 +1,64 @@
+{
+  "weeks": 12,
+  "mean_auc_static": 0.7691,
+  "mean_auc_mlops": 0.814,
+  "min_auc_static": 0.5901,
+  "min_auc_mlops": 0.5872,
+  "final_auc_static": 0.607,
+  "final_auc_mlops": 0.7821,
+  "mean_f1_static": 0.5561,
+  "mean_f1_mlops": 0.6046,
+  "alerts": 2,
+  "models_promoted": 2,
+  "models_rejected": 0,
+  "false_alarms_in_stable_weeks": 0,
+  "first_alert_week": 7,
+  "runtime_seconds": 3.9,
+  "registry": [
+    {
+      "version": 1,
+      "file": "model_v1.joblib",
+      "status": "archived",
+      "metrics": {
+        "auc": 0.8701,
+        "accuracy": 0.856,
+        "f1": 0.5288,
+        "default_rate": 0.1832,
+        "n": 1250
+      },
+      "trained_on": "week 0 (reference)",
+      "note": "initial model",
+      "created_at": "2026-10-26T13:28:00+00:00"
+    },
+    {
+      "version": 2,
+      "file": "model_v2.joblib",
+      "status": "archived",
+      "metrics": {
+        "auc": 0.8489,
+        "accuracy": 0.775,
+        "f1": 0.6377,
+        "default_rate": 0.336,
+        "n": 1000
+      },
+      "trained_on": "weeks 6-7",
+      "note": "data drift in 57% of features",
+      "created_at": "2026-10-26T13:28:02+00:00"
+    },
+    {
+      "version": 3,
+      "file": "model_v3.joblib",
+      "status": "production",
+      "metrics": {
+        "auc": 0.7613,
+        "accuracy": 0.712,
+        "f1": 0.68,
+        "default_rate": 0.468,
+        "n": 1000
+      },
+      "trained_on": "weeks 8-9",
+      "note": "AUC fell 0.262 below baseline",
+      "created_at": "2026-10-26T13:28:03+00:00"
+    }
+  ]
+}

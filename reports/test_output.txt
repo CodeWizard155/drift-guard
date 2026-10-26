@@ -1,0 +1,16 @@
+test_columns_and_size (tests.test_drift.TestDataGenerator.test_columns_and_size) ... ok
+test_phases (tests.test_drift.TestDataGenerator.test_phases) ... ok
+test_same_seed_is_reproducible (tests.test_drift.TestDataGenerator.test_same_seed_is_reproducible) ... ok
+test_detects_data_drift (tests.test_drift.TestDriftDetector.test_detects_data_drift) ... ok
+test_no_drift_in_stable_week (tests.test_drift.TestDriftDetector.test_no_drift_in_stable_week) ... ok
+test_performance_drift_flag (tests.test_drift.TestDriftDetector.test_performance_drift_flag) ... ok
+test_identical_distributions_have_near_zero_psi (tests.test_drift.TestPSI.test_identical_distributions_have_near_zero_psi) ... ok
+test_psi_levels (tests.test_drift.TestPSI.test_psi_levels) ... ok
+test_shifted_distribution_is_critical (tests.test_drift.TestPSI.test_shifted_distribution_is_critical) ... ok
+test_model_beats_random (tests.test_drift.TestTrainingAndRegistry.test_model_beats_random) ... ok
+test_registry_versions_and_promotion (tests.test_drift.TestTrainingAndRegistry.test_registry_versions_and_promotion) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 1.215s
+
+OK

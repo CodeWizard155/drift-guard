@@ -1,0 +1,1 @@
+Model v3 | probability of default = 13.9% -> APPROVE

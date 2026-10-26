@@ -1,0 +1,51 @@
+==============================================================================
+ DriftGuard - Model Drift Detection & Automated Retraining Pipeline
+==============================================================================
+[week 0] trained model v1 on 5000 rows | hold-out AUC=0.870 acc=0.856 F1=0.529 -> PRODUCTION
+------------------------------------------------------------------------------
+[week  1] phase=stable        model=v1 AUC=0.863 (static 0.863) drifted features=0/7
+          status: OK (no drift)
+------------------------------------------------------------------------------
+[week  2] phase=stable        model=v1 AUC=0.873 (static 0.873) drifted features=0/7
+          status: OK (no drift)
+------------------------------------------------------------------------------
+[week  3] phase=stable        model=v1 AUC=0.844 (static 0.844) drifted features=0/7
+          status: OK (no drift)
+------------------------------------------------------------------------------
+[week  4] phase=stable        model=v1 AUC=0.862 (static 0.862) drifted features=0/7
+          status: OK (no drift)
+------------------------------------------------------------------------------
+[week  5] phase=data_drift    model=v1 AUC=0.854 (static 0.854) drifted features=0/7
+          status: OK (no drift)
+------------------------------------------------------------------------------
+[week  6] phase=data_drift    model=v1 AUC=0.849 (static 0.849) drifted features=1/7
+          critical PSI: debt_to_income=0.26
+          status: OK (no drift)
+------------------------------------------------------------------------------
+[week  7] phase=data_drift    model=v1 AUC=0.838 (static 0.838) drifted features=4/7
+          critical PSI: income=0.34, credit_score=0.41, debt_to_income=0.41, num_credit_lines=0.28
+  ALERT  week 7: data drift in 57% of features -> triggering retraining
+  RETRAIN candidate v2 AUC=0.849 vs production 0.846 on hold-out -> PROMOTED
+------------------------------------------------------------------------------
+[week  8] phase=data_drift    model=v2 AUC=0.844 (static 0.844) drifted features=0/7
+          status: OK (no drift)
+------------------------------------------------------------------------------
+[week  9] phase=concept_drift model=v2 AUC=0.587 (static 0.590) drifted features=0/7
+  ALERT  week 9: AUC fell 0.262 below baseline -> triggering retraining
+  RETRAIN candidate v3 AUC=0.761 vs production 0.717 on hold-out -> PROMOTED
+------------------------------------------------------------------------------
+[week 10] phase=concept_drift model=v3 AUC=0.788 (static 0.610) drifted features=0/7
+          status: OK (no drift)
+------------------------------------------------------------------------------
+[week 11] phase=concept_drift model=v3 AUC=0.783 (static 0.595) drifted features=0/7
+          status: OK (no drift)
+------------------------------------------------------------------------------
+[week 12] phase=concept_drift model=v3 AUC=0.782 (static 0.607) drifted features=0/7
+          status: OK (no drift)
+==============================================================================
+ SUMMARY
+  Mean AUC   static model: 0.769   DriftGuard (MLOps): 0.814
+  Final AUC  static model: 0.607   DriftGuard (MLOps): 0.782
+  Alerts: 2 | promoted: 2 | rejected: 0 | false alarms (stable weeks): 0
+  Production model: v3 | runtime 3.9 s
+==============================================================================
