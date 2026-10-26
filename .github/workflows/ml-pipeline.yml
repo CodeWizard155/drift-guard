@@ -1,0 +1,54 @@
+# CI/CD for ML: on every push, test the code, run the drift-monitoring
+# pipeline end to end, and publish the reports as a downloadable artifact.
+# A weekly schedule re-runs it, like a real monitoring job would.
+name: DriftGuard ML Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "30 3 * * 1"      # every Monday 09:00 IST
+  workflow_dispatch:
+
+jobs:
+  test-and-monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Unit tests
+        run: python -m unittest -v
+
+      - name: Run drift-monitoring and retraining pipeline
+        run: |
+          mkdir -p reports
+          python -m src.pipeline | tee reports/pipeline_output.txt
+
+      - name: Generate charts
+        run: python -m src.visualize
+
+      - name: Quality gate - production model must stay above AUC 0.75
+        run: |
+          python -c "
+          import json, sys
+          s = json.load(open('reports/summary.json'))
+          print('final AUC:', s['final_auc_mlops'])
+          sys.exit(0 if s['final_auc_mlops'] >= 0.75 else 1)
+          "
+
+      - name: Upload reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: driftguard-reports
+          path: |
+            reports/
+            models/registry.json
